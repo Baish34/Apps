@@ -1,0 +1,45 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Accordion container */
+  .accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  /* Accordion header buttons */
+  .accordion-header {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .accordion-header:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Accordion content */
+  .accordion-content {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    display: none; /* Initially hidden */
+  }
+  
+  /* Show content when active */
+  .accordion-content.active {
+    display: block;
+  }
+  
