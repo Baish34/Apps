@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="style.css">
+</head>
+<body>
+     <!-- Counter Container -->
+  <div class="counter-container">
+    <h1>Simple Counter App</h1>
+
+    <!-- Display the counter value -->
+    <div id="counter" class="counter-value">0</div>
+
+    <!-- Buttons for controlling the counter -->
+    <button class="increase">Increase</button>
+    <button class="decrease">Decrease</button>
+    <button class="reset">Reset</button>
+  </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+<!-- <body>
+    <div class="counter-container">
+      <h1>Counter App</h1>
+      <div id="counter" class="counter-value">0</div>
+      <button class="increase">Increase</button>
+      <button class="decrease">Decrease</button>
+      <button class="reset">Reset</button>
+    </div>
+  
+    <script>
+      // Reference to the counter display element
+      const counterDisplay = document.getElementById("counter");
+  
+      // Reference to buttons
+      const increaseButton = document.querySelector(".increase");
+      const decreaseButton = document.querySelector(".decrease");
+      const resetButton = document.querySelector(".reset");
+  
+      // Initialize the counter value
+      let counterValue = 0;
+  
+      // Function to update the counter display
+      function updateCounter() {
+        counterDisplay.textContent = counterValue; // Update the displayed counter value
+      }
+  
+      // Event listener for the "Increase" button
+      increaseButton.addEventListener("click", function () {
+        if (counterValue < 10) {
+          // If counter value is less than 10, increment it
+          counterValue++;
+        } else {
+          // If counter value is 10, reset to 0
+          counterValue = 0;
+        }
+        updateCounter(); // Update the displayed value
+      });
+  
+      // Event listener for the "Decrease" button
+      decreaseButton.addEventListener("click", function () {
+        if (counterValue > 0) {
+          // Decrease the counter value if greater than 0
+          counterValue--;
+        } else {
+          // Reset to 10 if the user decreases below 0
+          counterValue = 10;
+        }
+        updateCounter(); // Update the displayed value
+      });
+  
+      // Event listener for the "Reset" button
+      resetButton.addEventListener("click", function () {
+        counterValue = 0; // Reset the counter to 0
+        updateCounter(); // Update the displayed value
+      });
+    </script>
+  </body> -->

@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  /* Container for the Counter App */
+  .counter-container {
+    background: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Counter Number Styling */
+  .counter-value {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #333;
+  }
+
+  /* Buttons Styling */
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .increase {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  .decrease {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .reset {
+    background-color: #008cba;
+    color: white;
+  }
+
+  /* Hover Effects */
+  button:hover {
+    opacity: 0.8;
+  }
