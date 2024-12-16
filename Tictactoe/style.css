@@ -1,0 +1,44 @@
+/*Basic styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+/* Container for the game */
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* 3 columns, each 100px wide */
+  grid-template-rows: repeat(3, 100px);    /* 3 rows, each 100px tall */
+  gap: 5px;
+}
+
+/* Styling for each individual cell in the Tic-Tac-Toe grid */
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  background-color: white;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Styling for when a cell is clicked (highlight) */
+.cell.clicked {
+  background-color: #f0f0f0;
+}
+
+/* Styling for the message displayed above the grid */
+.message {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
